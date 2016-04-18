@@ -1,0 +1,7 @@
+<ul>
+  <li>{{title}}</li>
+
+  {{#each games as |game|}}
+    <li>{{game.awayTeam.name}} {{game.awayScore}} @ {{game.homeTeam.name}} {{game.homeScore}}</li>
+  {{/each}}
+</ul>
