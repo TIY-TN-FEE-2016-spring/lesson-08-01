@@ -6,6 +6,6 @@ export default Model.extend({
   name: attr(),
   city: attr(),
 
-  awayGames: hasMany(`game`),
-  homeGames: hasMany(`game`),
+  awayGames: hasMany(`game`, { inverse: `awayTeam` }),
+  homeGames: hasMany(`game`, { inverse: `homeTeam` }),
 });

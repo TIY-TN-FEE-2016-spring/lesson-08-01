@@ -6,6 +6,13 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
+  this.route('main', function() {
+    this.route('new');
+
+    this.route('schedule', {
+      path: '/:team_id'
+    });
+  });
 });
 
 export default Router;
