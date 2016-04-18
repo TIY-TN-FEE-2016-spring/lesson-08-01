@@ -1,1 +1,8 @@
-{{outlet}}
+<h2>Schedule</h2>
+
+<ul>
+  <li>Away Games</li>
+  {{#each model.awayGames as |game|}}
+    <li>{{game.awayTeam.name}} {{game.awayScore}} @ {{game.homeTeam.name}} {{game.homeScore}}</li>
+  {{/each}}
+</ul>
