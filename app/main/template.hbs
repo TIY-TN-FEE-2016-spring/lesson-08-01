@@ -1,7 +1,11 @@
 <h2>Main</h2>
 <ul>
   {{#each model as |team|}}
-    <li>{{team.name}}</li>
+    <li>
+      {{#link-to "main.schedule" team}}
+        {{team.name}}
+      {{/link-to}}
+    </li>
   {{/each}}
 </ul>
 
