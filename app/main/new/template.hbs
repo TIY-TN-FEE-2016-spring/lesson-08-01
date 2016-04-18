@@ -1,1 +1,14 @@
-{{outlet}}
+<form {{action saveTeam model on="submit"}}>
+
+  <p>
+    <label>Name</label>
+    {{input value=model.name}}
+  </p>
+
+  <p>
+    <label>City</label>
+    {{input value=model.city}}
+  </p>
+
+  <button>Save</button>
+</form>
