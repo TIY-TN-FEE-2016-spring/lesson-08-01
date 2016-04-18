@@ -9,8 +9,8 @@ Router.map(function() {
   this.route('main', function() {
     this.route('new');
 
-    this.route('schedule', {
-      path: '/:team_id'
+    this.route('schedule', { path: '/:team_id' }, function() {
+      this.route('new-game');
     });
   });
 });

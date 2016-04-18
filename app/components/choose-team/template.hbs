@@ -1,0 +1,11 @@
+<h2>{{title}}</h2>
+
+{{#if currentTeam}}
+  <h3>{{currentTeam.name}}</h3>
+{{/if}}
+
+<ul>
+  {{#each teams as |team|}}
+    <li {{action onchoose team}}>{{team.name}}</li>
+  {{/each}}
+</ul>

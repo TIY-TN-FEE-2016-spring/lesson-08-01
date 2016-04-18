@@ -1,0 +1,13 @@
+<h2>Create a new Game</h2>
+
+{{!-- model is a collection of all teams --}}
+
+{{choose-team onchoose=(action setHomeTeam) currentTeam=newGame.homeTeam teams=model title="Choose Home Team"}}
+
+{{choose-team onchoose=(action setAwayTeam) currentTeam=newGame.awayTeam teams=model title="Choose Away Team"}}
+
+{{input value=newGame.homeScore placeholder="homeScore"}}
+{{input value=newGame.awayScore placeholder="awayScore"}}
+{{input value=newGame.date placeholder="date"}}
+
+<button {{action saveGame newGame}}>Save</button>

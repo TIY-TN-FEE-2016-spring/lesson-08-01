@@ -8,5 +8,5 @@ export default Model.extend({
 
   homeScore: attr(`number`),
   awayScore: attr(`number`),
-  date: attr(`date`),
+  date: attr(),
 });
